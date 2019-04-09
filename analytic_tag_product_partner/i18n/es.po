@@ -1,0 +1,62 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* analytic_tag_product_partner
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-07 15:10+0000\n"
+"PO-Revision-Date: 2019-04-07 17:11+0200\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#. module: analytic_tag_product_partner
+#: code:addons/analytic_tag_product_partner/models/account_invoice_line.py:12
+#: code:addons/analytic_tag_product_partner/models/purchase_order_line.py:12
+#: code:addons/analytic_tag_product_partner/models/sale_order_line.py:12
+#, python-format
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: analytic_tag_product_partner
+#: model:ir.model,name:analytic_tag_product_partner.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: analytic_tag_product_partner
+#: model:ir.model,name:analytic_tag_product_partner.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Línea de factura"
+
+#. module: analytic_tag_product_partner
+#: code:addons/analytic_tag_product_partner/models/account_invoice_line.py:16
+#: code:addons/analytic_tag_product_partner/models/purchase_order_line.py:16
+#: code:addons/analytic_tag_product_partner/models/sale_order_line.py:16
+#: model:ir.model.fields,field_description:analytic_tag_product_partner.field_account_invoice_line__provider_id
+#: model:ir.model.fields,field_description:analytic_tag_product_partner.field_purchase_order_line__provider_id
+#: model:ir.model.fields,field_description:analytic_tag_product_partner.field_sale_order_line__provider_id
+#, python-format
+msgid "Provider"
+msgstr "Proveedor"
+
+#. module: analytic_tag_product_partner
+#: model:ir.model,name:analytic_tag_product_partner.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: analytic_tag_product_partner
+#: model:ir.model,name:analytic_tag_product_partner.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Línea de pedido de compra"
+
+#. module: analytic_tag_product_partner
+#: model:ir.model,name:analytic_tag_product_partner.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 Xavier Piernas <xavier.piernas@qubiq.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="invoice_form" model="ir.ui.view">
+        <field name="name">invoice.form</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_form"/>
+        <field name="arch" type="xml">
+        	<xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='analytic_tag_ids']" position="before">
+        		<field name="customer_id" domain="[('customer', '=', True)]" options="{'no_create': True, 'no_open': True}"/>
+        		<field name="provider_id" domain="[('supplier', '=', True)]" options="{'no_create': True, 'no_open': True}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="invoice_supplier_form" model="ir.ui.view">
+        <field name="name">invoice.supplier.form</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_supplier_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='analytic_tag_ids']" position="before">
+                <field name="customer_id" domain="[('customer', '=', True)]" options="{'no_create': True, 'no_open': True}"/>
+                <field name="provider_id" domain="[('supplier', '=', True)]" options="{'no_create': True, 'no_open': True}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
